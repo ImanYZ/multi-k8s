@@ -13,11 +13,7 @@ spec:
         component: web
     spec:
       containers:
-      - name: client
-        image: 1man/multi-client
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 3000
+        - name: client
+          image: 1man/multi-client
+          ports:
+            - containerPort: 3000
